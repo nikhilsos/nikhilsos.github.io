@@ -21,22 +21,22 @@ repository               : "https://nikhilsos.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Nikhil Thapa"
   pronouns         : "he/him"  
   bio              : "I am a graduate research student pursuing Master's in Computer Science and Engineering at AILab headed by Prof. Dr. Joonwhoan Lee at Jeonbuk National University, South Korea. I am interested in applying machine learning to various music information retrieval problems. Besides that I am into hiphop music, you can check out some of the songs I wrote, produced, performed, mixed and mastered."
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Jeonju, South Korea"
+  employer         : "Jeonbuk National University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "nikhiltesla@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.co.kr/citations?user=a5kZyOIAAAAJ&hl=en"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  # orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
