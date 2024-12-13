@@ -1,7 +1,7 @@
 ---
 title: "Deep Metric Learning Based Classification of Tree Species and Disease Stages Possibly Affected by Pine Wilt Disease"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11554864
 excerpt: ' Pine Wilt Disease (PWD) poses a global threat to forests demanding swift detection and intervention. This research involves deep metric learning with a Resnet50 backbone and semi-hard triplet loss for classification of possible PWD tree objects. The dataset was sourced from the Korea Forestry Promotion Institute (KofPI), for possible infected tree and disease stage categorization. The results show 93.3% and 84.3% overall accuracy for species and stages classification, respectively. This approach shows potential for classification of possible PWD tree objects, using deep metric learning for effective forest management.'
 date: 16 May 2024
