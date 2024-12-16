@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
+permalink: /assets/RenderCV_EngineeringResumes_Theme.pdf
 author_profile: true
 redirect_from:
   - /resume
