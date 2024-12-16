@@ -21,7 +21,10 @@ main:
     url: /year-archive/
     
   - title: "CV"
-    url: /cv/
+    url: /layout: page  # Use 'page' layout for standalone pages
+---
+
+{% include base_path %}/
     
   # - title: "Guide"
   #   url: /markdown/
