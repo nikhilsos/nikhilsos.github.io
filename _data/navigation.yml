@@ -21,7 +21,7 @@ main:
     url: /year-archive/
     
   - title: "CV"
-    url: /layout: page  # Use 'page' layout for standalone pages
+    url: /assets/RenderCV_EngineeringResumes_Theme.pdf  # Use 'page' layout for standalone pages
 ---
 
 {% include base_path %}/
