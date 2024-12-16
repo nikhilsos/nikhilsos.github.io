@@ -1,11 +1,9 @@
----
-layout: archive
+layout: page  # Use 'page' layout for standalone pages
 title: "CV"
-permalink: /assets/RenderCV_EngineeringResumes_Theme.pdf
+permalink: /cv/  # This creates a /cv/ page URL for your CV
 author_profile: true
 redirect_from:
-  -/assets/RenderCV_EngineeringResumes_Theme.pdf
+  - /resume
 ---
 
-## CV
-[Download my CV (PDF)](/assets/RenderCV_EngineeringResumes_Theme.pdf)
+{% include base_path %}
