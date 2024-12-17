@@ -4,9 +4,11 @@ excerpt: "Short description of portfolio item number 2"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML.
+I've always been interested in poetry, and as I grew, Hiphop started to resonate with me more and more. I taught myself how to make beats and do mixing/mastering through YouTube tutorials and even tried creating a few songs.
 
-### Video Example:
-Here is a video from YouTube:
+Although I haven’t been making music recently, here are some pieces I worked on—some of them are as old as 5 years. The lyrics are a mix of Nepali and English, and some words might be explicit—so consider this a heads-up!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IyRPEjQE1Lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### By yours. truly,:
+Here is one from YouTube:
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/IyRPEjQE1Lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
