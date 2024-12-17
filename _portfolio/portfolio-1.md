@@ -15,10 +15,10 @@ While I haven't been actively producing music recently, here’s a glimpse of wh
 ### Featured Track  
 Here’s one of my songs:  
 
-<iframe width="320" height="180" src="https://www.youtube.com/embed/IyRPEjQE1Lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube.com/embed/IyRPEjQE1Lk" title="Nikhil Thapa - Throne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Here's another:
-<iframe width="320" height="180" src="https://www.youtube.com/watch?v=w_nXU5NUELM&ab_channel=NikhilThapa" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube.com/embed/gidcxax7R_Y" title="Nikhil Thapa- MATO [Lyrics Video] (Prod. Nikhil Thapa) Nepali Lofi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ---
