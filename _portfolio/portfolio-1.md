@@ -17,12 +17,6 @@ Here’s one of my songs:
 
 <iframe class="small-video" src="https://www.youtube.com/embed/IyRPEjQE1Lk" title="Nikhil Thapa - Throne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<style>
-  .small-video {
-    width: 320px;
-    height: 180px;
-  }
-</style>
 
 
 Here's another:
