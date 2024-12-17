@@ -1,14 +1,49 @@
 ---
 title: "Music"
-excerpt: "Short description of portfolio item number 2"
+excerpt: "A glimpse into my journey of making music, beats, and experimenting with hip-hop."
 collection: portfolio
 ---
 
-I've always been interested in poetry, and as I grew, Hiphop started to resonate with me more and more. I taught myself how to make beats and do mixing/mastering through YouTube tutorials and even tried creating a few songs.
+### Music Portfolio  
 
-Although I haven’t been making music recently, here are some pieces I worked on... some of them are as old as 5 years. The lyrics are a mix of Nepali and English, and some words might be explicit—so consider this a heads-up!
+I've always been drawn to poetry, which evolved into a deep connection with hip-hop over the years. Self-taught through countless YouTube tutorials, I learned beat-making, mixing, and mastering, eventually experimenting with creating my own songs.  
 
-### By Yours truly,
-Here is one from YouTube:
+While I haven't been actively producing music recently, here’s a glimpse of what I’ve worked on over the years. Some pieces date back 5 years! The lyrics are in Nepali, English, or a mix of both—note that some tracks contain explicit language.  
 
-<iframe width="480" height="270" src="https://www.youtube.com/embed/IyRPEjQE1Lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
+
+### Featured Track  
+Here’s one of my songs:  
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/IyRPEjQE1Lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+---
+
+### Instrumentals and Beats  
+
+Below are some beats I produced. Click to listen or play them directly here:  
+
+- **Beat 1**  
+  <audio controls>
+    <source src="https://example.com/beat1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+- **Beat 2**  
+  <audio controls>
+    <source src="https://example.com/beat2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+- **Beat 3**  
+  <audio controls>
+    <source src="https://example.com/beat3.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+Feel free to explore and enjoy!  
+
+---
+
+### By Yours Truly  
+*— Nikhil Thapa*
