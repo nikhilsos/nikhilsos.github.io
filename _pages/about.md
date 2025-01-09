@@ -6,7 +6,7 @@ author_profile: true
 
 ## About Me  
 I’m a final-year graduate student at AILAB, Jeonbuk National University, South Korea, interested in Computer Vision and AI applications in Music.  
-I believe in the philosophy of failing fast and failing forward, I love learning new things and creative and elegant solutions inspire me. 
+I believe in the philosophy of failing fast and failing forward, I love learning new things. Creative and elegant solutions inspire me. 
 
 ---
 
