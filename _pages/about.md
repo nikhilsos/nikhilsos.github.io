@@ -22,4 +22,5 @@ I've also worked on Music Information Retrieval (MIR), My work focused on beat t
 
 ## Let’s Connect  
 
-Explore my **[projects](#)**, **[publications](#)**, or feel free to reach out to discuss ideas, collaborations, or anything !  
+Explore my **[projects](https://github.com/academicpages)**, **[publications](https://nikhilsos.github.io/publications/)** and **[music]([https://nikhilsos.github.io/publications/]**  or feel free to reach out to discuss ideas, collaborations, or anything !  
+---
