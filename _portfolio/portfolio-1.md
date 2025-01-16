@@ -25,29 +25,9 @@ Here's another:
 
 ---
 
-### Instrumentals and Beats  
-
-Below are some beats I produced. Click to listen or play them directly here:  
-
-- **Beat 1**  
-  <audio controls>
-    <source src="https://example.com/beat1.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-- **Beat 2**  
-  <audio controls>
-    <source src="https://example.com/beat2.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-- **Beat 3**  
-  <audio controls>
-    <source src="https://example.com/beat3.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-Feel free to explore and enjoy!  
+### My Music and Beats..
+Some of the music I created is in this [Google Drive link](https://drive.google.com/drive/folders/1O-1ZAXA0Lm69u1uW1hGew-RddtWR4loV?usp=sharing). I have not produced recently as I have been busy with my university work.  
+Feel free to explore and enjoy! 
 
 ---
 
