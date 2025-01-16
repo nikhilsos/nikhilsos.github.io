@@ -22,6 +22,20 @@ Here’s one of my songs:
 Here's another:
 <iframe width="320" height="180" src="https://www.youtube.com/embed/gidcxax7R_Y" title="Nikhil Thapa- MATO [Lyrics Video] (Prod. Nikhil Thapa) Nepali Lofi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Here’s one of my songs:  
+<iframe width="320" height="180" src="https://www.youtube.com/embed/IyRPEjQE1Lk" 
+        title="Nikhil Thapa - Throne" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Here's another:
+<iframe width="320" height="180" src="https://www.youtube.com/embed/gidcxax7R_Y" 
+        title="Nikhil Thapa- MATO [Lyrics Video] (Prod. Nikhil Thapa) Nepali Lofi" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+
+
 
 ---
 
