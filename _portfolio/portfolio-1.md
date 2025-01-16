@@ -8,7 +8,7 @@ I've always been drawn to poetry, which evolved into a deep connection with hip-
 
 While I haven't been actively producing music recently, here’s a glimpse of what I’ve worked on over the years. Some pieces date back 5 years! 
 
-You can check out my [youTube](https://www.youtube.com/@nikhilthapa9300)
+You can check out my [YouTube](https://www.youtube.com/@nikhilthapa9300)
 
 The lyrics are in Nepali, English, or a mix of both, note that some tracks might contain explicit language.  
 
@@ -20,7 +20,7 @@ Feel free to explore and enjoy!
 ### Some of my songs 
 
 Here are some of my songs:  
-
+---
 <iframe width="1903" height="788" src="https://www.youtube.com/embed/-jKAGJ2KFoI" title="Hustle Mero Jaari Xa - Nikhil Thapa| Nepali Rap Song | Video session  | Prod.ESKRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
 <iframe width="320" height="180" src="https://www.youtube.com/embed/IyRPEjQE1Lk" 
@@ -38,7 +38,4 @@ Here are some of my songs:
 
 
 
----
 
-### By Yours Truly  
-*— Nikhil Thapa*
