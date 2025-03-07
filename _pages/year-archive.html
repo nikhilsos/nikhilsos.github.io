@@ -1,21 +1,10 @@
----
-layout: archive
-permalink: /year-archive/
-title: "Blog posts"
-author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
----
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2 class="archive__subtitle">Notion Blog</h2>
+<ul>
+  <li><a href="https://www.notion.so/your-notion-page-1" target="_blank">Blog Title 1</a></li>
+  <li><a href="https://www.notion.so/your-notion-page-2" target="_blank">Blog Title 2</a></li>
+  <li><a href="https://www.notion.so/your-notion-page-3" target="_blank">Blog Title 3</a></li>
+</ul>
+
 
 <iframe src="https://fifth-violin-d39.notion.site/ebd/1af3ca152fef80069bf3dc413148fad1" width="100%" height="600" frameborder="0" allowfullscreen />
