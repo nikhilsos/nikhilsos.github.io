@@ -2,12 +2,11 @@
 title: "Pine Wilt Disease Segmentation with Deep Metric Learning Species Classification for Early-Stage Disease and Potential False Positive Identification"
 collection: publications
 category: manuscripts
-permalink: https://www.mdpi.com/2079-9292/13/10/1951
+permalink: pwd
 excerpt: 'This study introduces a method for Pine Wilt Disease detection using drone orthomapped images. YOLOv8 segments diseased areas, followed by cropping regions with context for classification via Deep Metric Learning. A ResNet50 model with semi-hard triplet loss generates embeddings, and a Random Forest classifier identifies tree species and reduces false positives, outperforming multi-class segmentation.'
 date: 16 May 2024
 venue: 'Electronics, MDPI'
 ---
-
 Pine Wilt Disease poses a significant global threat to forests, necessitating swift detection methods. Conventional approaches are resource-intensive but utilizing deep learning on ortho-mapped images obtained from Unmanned Aerial Vehicles offers cost-effective and scalable solutions. 
 
 ![Segmentation Example](image.png)
