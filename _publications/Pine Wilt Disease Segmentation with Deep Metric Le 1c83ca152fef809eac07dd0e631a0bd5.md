@@ -1,0 +1,27 @@
+---
+title: "Pine Wilt Disease Segmentation with Deep Metric Learning Species Classification for Early-Stage Disease and Potential False Positive Identification"
+collection: publications
+category: manuscripts
+permalink: https://www.mdpi.com/2079-9292/13/10/1951
+excerpt: ' This study presents a method for Pine Wilt Disease detection and classification. We worked on orthomapped images from drones as input. In case of PWD, the diseased objects have close remblance to other natural objects which causes usual methods to have very high false positives, and also there is high similarity in the different species of trees the PWD affects. The objective was to segment the diseased areas but also infer the class of the species affected. So we used YOLOv8 for segmenting diseased areas, followed by cropping the diseased regions from the original image with sufficient background context and applying Deep Metric Learning for classification. Using a ResNet50 model with semi-hard triplet loss to obtain embeddings, and subsequently trained a Random Forest classifier, we got better results than using multi class segmentation using YOLOv8'
+date: 16 May 2024
+venue: 'Electronics, MDPI'
+---
+# Pine Wilt Disease Segmentation with Deep Metric Learning Species Classification for Early-Stage Disease and Potential False Positive Identification  [Paper]
+Pine Wilt Disease poses a significant global threat to forests, necessitating swift detection methods. Conventional approaches are resource-intensive but utilizing deep learning on ortho-mapped images obtained from Unmanned Aerial Vehicles offers cost-effective and scalable solutions. 
+
+![image.png](image.png)
+
+This study presents a novel method for Pine Wilt Disease detection and classification using YOLOv8 for segmenting diseased areas, followed by cropping the diseased regions from the original image and applying Deep Metric Learning for classification. 
+
+We trained a ResNet50 model using semi-hard triplet loss to obtain embeddings, and subsequently trained a Random Forest classifier tasked with identifying tree species and distinguishing false positives.
+
+![image.png](image%201.png)
+
+ Segmentation was favored over object detection due to its ability to provide pixel-level information, enabling the flexible extension of subsequent bounding boxes. Deep Metric Learning-based classification after segmentation was chosen for its effectiveness in handling visually similar images.
+
+![image.png](image%202.png)
+
+ The results indicate a mean Intersection over Union of 83.12% for segmentation, with classification accuracies of 98.7% and 90.7% on the validation and test sets, respectively.
+
+Keywords: pine wilt disease detection; segmentation; deep metric learning; forest resource monitoring; disease classification.
