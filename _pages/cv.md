@@ -1,6 +1,6 @@
 layout: page  # Use 'page' layout for standalone pages
 title: "CV"
-permalink: [/assets/RenderCV_EngineeringResumes_Theme.pdf](https://github.com/nikhilsos/nikhilsos.github.io/blob/master/assets/RenderCV_EngineeringResumes_Theme.pdf)  # Corrected the permalink to remove the trailing slash
+permalink: https://drive.google.com/file/d/1lsHYunqJhB0Fl-Ij8LAphYuALqFOX_vr/view?usp=sharing  # Corrected the permalink to remove the trailing slash
 author_profile: true
 redirect_from:
   - /resume
