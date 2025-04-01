@@ -12,13 +12,21 @@ The Transformer, a deep learning architecture, has shown exceptional adaptabilit
 
 ![Beat Tracking Model Overview](/_publications/image.png)
 
+
+
 To capture beat intervals of varying lengths and ensure optimal alignment of beat predictions, the model employs a Dynamic Bayesian Network (DBN), followed by Viterbi decoding for effective post-processing. This system is evaluated across diverse public datasets spanning various music genres and styles, achieving performance on par with current state-of-the-art methods yet with fewer trainable parameters. Additionally, we also explore the interpretability of the model using Grad-CAM to visualize the model’s learned features, offering insights into how the TCN-Transformer hybrid captures rhythmic patterns in the data.
 
 ![Grad-CAM Visualization 1](./image_bt2.png)
 
+
+
 ![Grad-CAM Visualization 2](./image_bt3.png)
 
+
+
 ![Spectrogram and Activations](image_bt4.png)
+
+
 
 *Fig. Spectrogram, ground truth annotation and generated activations*
 
