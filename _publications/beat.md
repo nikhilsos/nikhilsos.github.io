@@ -10,7 +10,7 @@ venue: 'Applied Sciences, MDPI'
 
 The Transformer, a deep learning architecture, has shown exceptional adaptability across fields, including music information retrieval (MIR). Transformers excel at capturing global, long-range dependencies in sequences, which is valuable for tracking rhythmic patterns over time. Temporal Convolutional Networks (TCNs), with their dilated convolutions, are effective at processing local, temporal patterns with reduced complexity. Combining these complementary characteristics, global sequence modeling from Transformers and local temporal detail from TCNs enhances beat tracking while reducing the model’s overall complexity.
 
-![Beat Tracking Model Overview](/_publications/image.png)
+![Beat](/https://static.wixstatic.com/media/ba3be5_b20eff6fe9f04f0189a3ddb4ebba6d94~mv2.png/v1/crop/x_0,y_0,w_512,h_512,q_85,enc_avif,quality_auto/ba3be5_b20eff6fe9f04f0189a3ddb4ebba6d94~mv2.png)
 
 
 
