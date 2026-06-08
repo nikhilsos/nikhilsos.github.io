@@ -1,0 +1,77 @@
+last_updated: "2026-06-08"
+
+research:
+  - title: "Jangdan downbeat paper — revision & resubmission"
+    status: in-progress
+    deadline: ""
+    notes: ""
+  - title: "Generative audio system — prototype"
+    status: in-progress
+    deadline: ""
+    notes: "VQ-VAE + diffusion-based approach"
+  - title: "Third paper — scoping"
+    status: planned
+    deadline: ""
+    notes: ""
+
+habits:
+  - name: "Daily reading"
+    streak: 0
+    best: 0
+    target: 30
+    unit: days
+  - name: "Writing / journaling"
+    streak: 0
+    best: 0
+    target: 21
+    unit: days
+  - name: "Exercise"
+    streak: 0
+    best: 0
+    target: 21
+    unit: days
+  - name: "Deep work block (2h+)"
+    streak: 0
+    best: 0
+    target: 30
+    unit: days
+
+learning:
+  - title: "Diffusion models — theory & implementation"
+    status: in-progress
+    progress: 20
+    notes: "Working through DDPM, DDIM, classifier-free guidance"
+  - title: "VQ-VAE — paper + code"
+    status: planned
+    progress: 0
+    notes: ""
+  - title: "Score-based generative models (Song et al.)"
+    status: planned
+    progress: 0
+    notes: ""
+  - title: "Advaita Vedanta — Vivekachudamani"
+    status: in-progress
+    progress: 40
+    notes: ""
+
+projects:
+  - title: "Generative audio system"
+    status: in-progress
+    todos:
+      - task: "Dataset pipeline"
+        done: false
+      - task: "VQ-VAE baseline"
+        done: false
+      - task: "Diffusion model integration"
+        done: false
+      - task: "Evaluation setup"
+        done: false
+  - title: "Personal website rebrand"
+    status: in-progress
+    todos:
+      - task: "Update bio and research framing"
+        done: true
+      - task: "Add Jangdan publication"
+        done: true
+      - task: "Add goals dashboard"
+        done: false
