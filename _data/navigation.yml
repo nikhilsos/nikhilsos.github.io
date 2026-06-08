@@ -21,10 +21,7 @@ main:
     url: https://www.notion.so/1c43ca152fef80119e01d261dedcc0cb?v=1c43ca152fef8086b987000c48206850
     
   - title: "CV"
-    url: https://drive.google.com/file/d/1lsHYunqJhB0Fl-Ij8LAphYuALqFOX_vr/view?usp=drive_link  # Use 'page' layout for standalone pages
----
+    url: https://drive.google.com/file/d/1qB8eDDTRdpbDRkX3mLsoLWWCFY-B_uoG/view?usp=drive_link
 
-{% include base_path %}/
-    
   # - title: "Guide"
   #   url: /markdown/

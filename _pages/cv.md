@@ -1,9 +1,12 @@
-layout: page  # Use 'page' layout for standalone pages
+---
+layout: single
 title: "CV"
-permalink: https://drive.google.com/file/d/1lsHYunqJhB0Fl-Ij8LAphYuALqFOX_vr/view?usp=sharing  # Corrected the permalink to remove the trailing slash
+permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1qB8eDDTRdpbDRkX3mLsoLWWCFY-B_uoG/view?usp=drive_link">
+
+[Click here if not redirected automatically.](https://drive.google.com/file/d/1qB8eDDTRdpbDRkX3mLsoLWWCFY-B_uoG/view?usp=drive_link)
