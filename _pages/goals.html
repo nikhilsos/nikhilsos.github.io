@@ -6,232 +6,260 @@ author_profile: false
 ---
 
 <style>
-  .goals-meta {
-    font-size: 0.8em;
-    color: #888;
-    margin-bottom: 2rem;
+  :root {
+    --c-border: #e0e0e0;
+    --c-bg: #fafafa;
+    --c-text: #333;
+    --c-muted: #888;
+    --c-green-bg: #d4edda; --c-green-fg: #155724;
+    --c-yellow-bg: #fff3cd; --c-yellow-fg: #856404;
+    --c-gray-bg: #e2e3e5; --c-gray-fg: #383d41;
+    --c-red-bg: #f8d7da; --c-red-fg: #721c24;
   }
-  .goals-section {
-    margin-bottom: 3rem;
-  }
-  .goals-section h2 {
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 0.4rem;
-    margin-bottom: 1.2rem;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #555;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1rem;
-  }
-  .card {
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    padding: 1rem 1.1rem;
-    background: #fafafa;
-  }
-  .card-title {
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
-  }
-  .card-notes {
-    font-size: 0.8rem;
-    color: #777;
-    margin-top: 0.4rem;
-  }
-  .badge {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-  .badge-completed  { background: #d4edda; color: #155724; }
-  .badge-in-progress { background: #fff3cd; color: #856404; }
-  .badge-planned    { background: #e2e3e5; color: #383d41; }
-  .badge-delayed    { background: #f8d7da; color: #721c24; }
+  .g-meta { font-size: .8em; color: var(--c-muted); margin-bottom: 2rem; display:flex; gap:1.5rem; align-items:center; flex-wrap:wrap; }
+  .g-reset-btn { font-size:.75em; padding:3px 10px; border:1px solid #ccc; border-radius:4px; background:#fff; cursor:pointer; color:#666; }
+  .g-reset-btn:hover { border-color:#999; color:#333; }
+  .g-section { margin-bottom: 3rem; }
+  .g-section h2 { border-bottom:2px solid var(--c-border); padding-bottom:.4rem; margin-bottom:1.2rem; font-size:1rem; text-transform:uppercase; letter-spacing:.06em; color:#666; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:1rem; }
+  .card { border:1px solid var(--c-border); border-radius:6px; padding:1rem 1.1rem; background:var(--c-bg); }
+  .card-title { font-weight:600; font-size:.93rem; margin-bottom:.55rem; line-height:1.35; }
+  .card-notes { font-size:.78rem; color:var(--c-muted); margin-top:.4rem; }
+
+  /* Badges — clickable to cycle status */
+  .badge { display:inline-block; font-size:.68rem; font-weight:700; padding:2px 9px; border-radius:12px; text-transform:uppercase; letter-spacing:.04em; cursor:pointer; user-select:none; }
+  .badge:hover { opacity:.8; }
+  .s-completed   { background:var(--c-green-bg);  color:var(--c-green-fg); }
+  .s-in-progress { background:var(--c-yellow-bg); color:var(--c-yellow-fg); }
+  .s-planned     { background:var(--c-gray-bg);   color:var(--c-gray-fg); }
+  .s-delayed     { background:var(--c-red-bg);    color:var(--c-red-fg); }
 
   /* Habits */
-  .habit-card {
-    text-align: center;
-  }
-  .streak-num {
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #333;
-  }
-  .streak-label {
-    font-size: 0.72rem;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .habit-name {
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 0.6rem;
-  }
-  .habit-meta {
-    font-size: 0.75rem;
-    color: #aaa;
-    margin-top: 0.5rem;
-  }
+  .habit-card { text-align:center; }
+  .habit-name { font-weight:600; font-size:.9rem; margin-bottom:.7rem; }
+  .streak-row { display:flex; align-items:center; justify-content:center; gap:.6rem; margin-bottom:.3rem; }
+  .streak-btn { width:28px; height:28px; border:1px solid #ccc; border-radius:50%; background:#fff; cursor:pointer; font-size:1rem; line-height:1; display:flex; align-items:center; justify-content:center; color:#555; }
+  .streak-btn:hover { border-color:#888; color:#111; }
+  .streak-num { font-size:2.2rem; font-weight:700; line-height:1; color:var(--c-text); min-width:3rem; text-align:center; }
+  .streak-label { font-size:.7rem; color:var(--c-muted); text-transform:uppercase; letter-spacing:.05em; }
+  .habit-meta { font-size:.75rem; color:#bbb; margin-top:.5rem; }
+  .habit-best { font-size:.75rem; color:#aaa; }
 
-  /* Progress bar */
-  .progress-wrap {
-    margin-top: 0.6rem;
-  }
-  .progress-bar-bg {
-    background: #e9ecef;
-    border-radius: 4px;
-    height: 6px;
-    overflow: hidden;
-  }
-  .progress-bar-fill {
-    height: 100%;
-    border-radius: 4px;
-    background: #495057;
-  }
-  .progress-pct {
-    font-size: 0.75rem;
-    color: #999;
-    margin-top: 0.25rem;
-  }
+  /* Progress */
+  .progress-wrap { margin-top:.65rem; }
+  .progress-bar-bg { background:#e9ecef; border-radius:4px; height:7px; overflow:hidden; cursor:pointer; }
+  .progress-bar-fill { height:100%; border-radius:4px; background:#495057; transition:width .2s; }
+  .progress-pct { font-size:.75rem; color:#aaa; margin-top:.25rem; display:flex; align-items:center; gap:.4rem; }
+  .progress-pct input { width:42px; font-size:.75rem; border:1px solid #ddd; border-radius:3px; padding:1px 4px; text-align:center; }
 
   /* Todos */
-  .todo-list {
-    list-style: none;
-    padding: 0;
-    margin: 0.6rem 0 0;
-  }
-  .todo-list li {
-    font-size: 0.85rem;
-    padding: 3px 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .todo-done {
-    color: #aaa;
-    text-decoration: line-through;
-  }
-  .todo-check {
-    width: 14px;
-    height: 14px;
-    border: 1.5px solid #ccc;
-    border-radius: 3px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 10px;
-    color: #555;
-  }
-  .todo-check.done {
-    background: #495057;
-    border-color: #495057;
-    color: #fff;
-  }
+  .todo-list { list-style:none; padding:0; margin:.7rem 0 0; }
+  .todo-list li { font-size:.85rem; padding:4px 0; display:flex; align-items:center; gap:.5rem; cursor:pointer; }
+  .todo-list li:hover .todo-check { border-color:#888; }
+  .todo-check { width:15px; height:15px; border:1.5px solid #ccc; border-radius:3px; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; font-size:10px; color:#fff; background:#fff; transition:background .15s; }
+  .todo-check.done { background:#495057; border-color:#495057; }
+  .todo-text.done { color:#bbb; text-decoration:line-through; }
+
+  /* Add item */
+  .add-row { display:flex; gap:.4rem; margin-top:.8rem; }
+  .add-row input { flex:1; font-size:.82rem; padding:4px 8px; border:1px solid #ddd; border-radius:4px; }
+  .add-row button { font-size:.78rem; padding:4px 10px; border:1px solid #ccc; border-radius:4px; background:#fff; cursor:pointer; }
+  .add-row button:hover { border-color:#888; }
+
+  .section-add-btn { font-size:.75rem; margin-top:.8rem; padding:3px 10px; border:1px dashed #ccc; border-radius:4px; background:transparent; cursor:pointer; color:#888; }
+  .section-add-btn:hover { border-color:#888; color:#444; }
+  .add-card-form { border:1px dashed #ccc; border-radius:6px; padding:.8rem 1rem; background:#fff; }
+  .add-card-form input, .add-card-form textarea { width:100%; font-size:.82rem; padding:4px 8px; border:1px solid #ddd; border-radius:4px; margin-bottom:.4rem; box-sizing:border-box; }
+  .add-card-form .form-actions { display:flex; gap:.4rem; }
+  .add-card-form button { font-size:.78rem; padding:4px 10px; border:1px solid #ccc; border-radius:4px; background:#fff; cursor:pointer; }
+  .add-card-form button.primary { background:#495057; border-color:#495057; color:#fff; }
 </style>
 
-<p class="goals-meta">Last updated: {{ site.data.goals.last_updated }}</p>
+<!-- Seed data from Jekyll/YAML -->
+<script>
+const SEED = {
+  lastUpdated: "{{ site.data.goals.last_updated }}",
+  research: [{% for i in site.data.goals.research %}{"title":"{{ i.title | escape }}","status":"{{ i.status }}","deadline":"{{ i.deadline }}","notes":"{{ i.notes | escape }}"}{% unless forloop.last %},{% endunless %}{% endfor %}],
+  habits: [{% for h in site.data.goals.habits %}{"name":"{{ h.name | escape }}","streak":{{ h.streak }},"best":{{ h.best }},"target":{{ h.target }},"unit":"{{ h.unit }}"}{% unless forloop.last %},{% endunless %}{% endfor %}],
+  learning: [{% for l in site.data.goals.learning %}{"title":"{{ l.title | escape }}","status":"{{ l.status }}","progress":{{ l.progress }},"notes":"{{ l.notes | escape }}"}{% unless forloop.last %},{% endunless %}{% endfor %}],
+  projects: [{% for p in site.data.goals.projects %}{"title":"{{ p.title | escape }}","status":"{{ p.status }}","todos":[{% for t in p.todos %}{"task":"{{ t.task | escape }}","done":{{ t.done }}}{% unless forloop.last %},{% endunless %}{% endfor %}]}{% unless forloop.last %},{% endunless %}{% endfor %}]
+};
 
-<!-- RESEARCH -->
-<div class="goals-section">
-  <h2>Research Milestones</h2>
-  <div class="cards">
-    {% for item in site.data.goals.research %}
+const KEY = 'nt_goals_v1';
+function load() {
+  try { return JSON.parse(localStorage.getItem(KEY)) || SEED; } catch { return SEED; }
+}
+function save(data) {
+  data.lastUpdated = new Date().toISOString().slice(0,10);
+  localStorage.setItem(KEY, JSON.stringify(data));
+}
+let DATA = load();
+
+const STATUS_CYCLE = ['planned','in-progress','completed','delayed'];
+const STATUS_LABEL = {'planned':'Planned','in-progress':'In Progress','completed':'Completed','delayed':'Delayed'};
+
+function badgeClass(s) {
+  return 's-' + (s||'planned');
+}
+function cycleStatus(arr, idx) {
+  const cur = arr[idx].status || 'planned';
+  arr[idx].status = STATUS_CYCLE[(STATUS_CYCLE.indexOf(cur)+1) % STATUS_CYCLE.length];
+  save(DATA);
+  render();
+}
+
+function render() {
+  renderMeta();
+  renderResearch();
+  renderHabits();
+  renderLearning();
+  renderProjects();
+}
+
+function renderMeta() {
+  document.getElementById('g-updated').textContent = 'Last updated: ' + DATA.lastUpdated;
+}
+
+/* ── RESEARCH ── */
+function renderResearch() {
+  const el = document.getElementById('research-cards');
+  el.innerHTML = DATA.research.map((r,i) => `
     <div class="card">
-      <div class="card-title">{{ item.title }}</div>
-      {% if item.status == "completed" %}
-        <span class="badge badge-completed">Completed</span>
-      {% elsif item.status == "in-progress" %}
-        <span class="badge badge-in-progress">In Progress</span>
-      {% elsif item.status == "delayed" %}
-        <span class="badge badge-delayed">Delayed</span>
-      {% else %}
-        <span class="badge badge-planned">Planned</span>
-      {% endif %}
-      {% if item.deadline != "" %}<div class="card-notes">Deadline: {{ item.deadline }}</div>{% endif %}
-      {% if item.notes != "" %}<div class="card-notes">{{ item.notes }}</div>{% endif %}
-    </div>
-    {% endfor %}
-  </div>
-</div>
+      <div class="card-title">${r.title}</div>
+      <span class="badge ${badgeClass(r.status)}" onclick="cycleStatus(DATA.research,${i})" title="Click to cycle status">${STATUS_LABEL[r.status]||r.status}</span>
+      ${r.deadline ? `<div class="card-notes">Deadline: ${r.deadline}</div>` : ''}
+      ${r.notes ? `<div class="card-notes">${r.notes}</div>` : ''}
+    </div>`).join('');
+}
 
-<!-- HABITS -->
-<div class="goals-section">
-  <h2>Daily Habits</h2>
-  <div class="cards">
-    {% for habit in site.data.goals.habits %}
+/* ── HABITS ── */
+function changeStreak(i, delta) {
+  DATA.habits[i].streak = Math.max(0, DATA.habits[i].streak + delta);
+  if (DATA.habits[i].streak > DATA.habits[i].best) DATA.habits[i].best = DATA.habits[i].streak;
+  save(DATA);
+  renderHabits();
+}
+function resetStreak(i) {
+  DATA.habits[i].streak = 0;
+  save(DATA);
+  renderHabits();
+}
+function renderHabits() {
+  const el = document.getElementById('habits-cards');
+  el.innerHTML = DATA.habits.map((h,i) => `
     <div class="card habit-card">
-      <div class="habit-name">{{ habit.name }}</div>
-      <div class="streak-num">{{ habit.streak }}</div>
-      <div class="streak-label">current streak ({{ habit.unit }})</div>
-      <div class="habit-meta">Best: {{ habit.best }} · Target: {{ habit.target }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<!-- LEARNING -->
-<div class="goals-section">
-  <h2>Learning Goals</h2>
-  <div class="cards">
-    {% for item in site.data.goals.learning %}
-    <div class="card">
-      <div class="card-title">{{ item.title }}</div>
-      {% if item.status == "completed" %}
-        <span class="badge badge-completed">Completed</span>
-      {% elsif item.status == "in-progress" %}
-        <span class="badge badge-in-progress">In Progress</span>
-      {% else %}
-        <span class="badge badge-planned">Planned</span>
-      {% endif %}
-      <div class="progress-wrap">
-        <div class="progress-bar-bg">
-          <div class="progress-bar-fill" style="width: {{ item.progress }}%"></div>
-        </div>
-        <div class="progress-pct">{{ item.progress }}%</div>
+      <div class="habit-name">${h.name}</div>
+      <div class="streak-row">
+        <button class="streak-btn" onclick="changeStreak(${i},-1)">−</button>
+        <div class="streak-num">${h.streak}</div>
+        <button class="streak-btn" onclick="changeStreak(${i},1)">+</button>
       </div>
-      {% if item.notes != "" %}<div class="card-notes">{{ item.notes }}</div>{% endif %}
-    </div>
-    {% endfor %}
-  </div>
+      <div class="streak-label">current streak (${h.unit})</div>
+      <div class="habit-meta">Target: ${h.target} · <span class="habit-best">Best: ${h.best}</span></div>
+    </div>`).join('');
+}
+
+/* ── LEARNING ── */
+function setProgress(i, val) {
+  DATA.learning[i].progress = Math.min(100, Math.max(0, parseInt(val)||0));
+  if (DATA.learning[i].progress === 100) DATA.learning[i].status = 'completed';
+  save(DATA);
+  renderLearning();
+}
+function renderLearning() {
+  const el = document.getElementById('learning-cards');
+  el.innerHTML = DATA.learning.map((l,i) => `
+    <div class="card">
+      <div class="card-title">${l.title}</div>
+      <span class="badge ${badgeClass(l.status)}" onclick="cycleStatus(DATA.learning,${i})" title="Click to cycle status">${STATUS_LABEL[l.status]||l.status}</span>
+      <div class="progress-wrap">
+        <div class="progress-bar-bg" onclick="clickBar(event,${i})" title="Click to set progress">
+          <div class="progress-bar-fill" style="width:${l.progress}%"></div>
+        </div>
+        <div class="progress-pct">
+          <input type="number" min="0" max="100" value="${l.progress}" onchange="setProgress(${i},this.value)" onblur="setProgress(${i},this.value)" style="width:46px">%
+        </div>
+      </div>
+      ${l.notes ? `<div class="card-notes">${l.notes}</div>` : ''}
+    </div>`).join('');
+}
+function clickBar(e, i) {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const pct = Math.round(((e.clientX - rect.left) / rect.width) * 100);
+  setProgress(i, pct);
+}
+
+/* ── PROJECTS ── */
+function toggleTodo(pi, ti) {
+  DATA.projects[pi].todos[ti].done = !DATA.projects[pi].todos[ti].done;
+  save(DATA);
+  renderProjects();
+}
+function addTodo(pi) {
+  const inp = document.getElementById(`todo-inp-${pi}`);
+  const val = inp.value.trim();
+  if (!val) return;
+  DATA.projects[pi].todos.push({task: val, done: false});
+  inp.value = '';
+  save(DATA);
+  renderProjects();
+}
+function renderProjects() {
+  const el = document.getElementById('projects-cards');
+  el.innerHTML = DATA.projects.map((p,pi) => {
+    const done = p.todos.filter(t=>t.done).length;
+    const total = p.todos.length;
+    return `
+    <div class="card">
+      <div class="card-title">${p.title}</div>
+      <span class="badge ${badgeClass(p.status)}" onclick="cycleStatus(DATA.projects,${pi})" title="Click to cycle status">${STATUS_LABEL[p.status]||p.status}</span>
+      ${total ? `<div class="card-notes" style="margin-top:.4rem">${done}/${total} done</div>` : ''}
+      <ul class="todo-list">
+        ${p.todos.map((t,ti) => `
+          <li onclick="toggleTodo(${pi},${ti})">
+            <span class="todo-check ${t.done?'done':''}">✓</span>
+            <span class="todo-text ${t.done?'done':''}">${t.task}</span>
+          </li>`).join('')}
+      </ul>
+      <div class="add-row" style="margin-top:.6rem">
+        <input id="todo-inp-${pi}" type="text" placeholder="Add task…" onkeydown="if(event.key==='Enter')addTodo(${pi})">
+        <button onclick="addTodo(${pi})">+</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function hardReset() {
+  if (!confirm('Reset all data back to defaults?')) return;
+  localStorage.removeItem(KEY);
+  DATA = load();
+  render();
+}
+
+document.addEventListener('DOMContentLoaded', render);
+</script>
+
+<div class="g-meta">
+  <span id="g-updated"></span>
+  <button class="g-reset-btn" onclick="hardReset()">Reset to defaults</button>
 </div>
 
-<!-- PROJECTS -->
-<div class="goals-section">
+<div class="g-section">
+  <h2>Research Milestones</h2>
+  <div class="cards" id="research-cards"></div>
+</div>
+
+<div class="g-section">
+  <h2>Daily Habits</h2>
+  <div class="cards" id="habits-cards"></div>
+</div>
+
+<div class="g-section">
+  <h2>Learning Goals</h2>
+  <div class="cards" id="learning-cards"></div>
+</div>
+
+<div class="g-section">
   <h2>Projects</h2>
-  <div class="cards">
-    {% for project in site.data.goals.projects %}
-    <div class="card">
-      <div class="card-title">{{ project.title }}</div>
-      {% if project.status == "completed" %}
-        <span class="badge badge-completed">Completed</span>
-      {% elsif project.status == "in-progress" %}
-        <span class="badge badge-in-progress">In Progress</span>
-      {% else %}
-        <span class="badge badge-planned">Planned</span>
-      {% endif %}
-      <ul class="todo-list">
-        {% for todo in project.todos %}
-        <li>
-          <span class="todo-check {% if todo.done %}done{% endif %}">{% if todo.done %}✓{% endif %}</span>
-          <span {% if todo.done %}class="todo-done"{% endif %}>{{ todo.task }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
-  </div>
+  <div class="cards" id="projects-cards"></div>
 </div>
