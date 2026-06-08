@@ -1,30 +1,31 @@
 ---
 permalink: /
-title: "Hello, I am Nikhil"
+title: "Nikhil Thapa"
 author_profile: true
 ---
 
-## About Me  
-I hold a degree in Computer Science and Engineering from Jeonbuk National University (JBNU), South Korea.
+Machine learning researcher with three first-author publications in computer vision and signal processing. Work focuses on representation learning and sequence modelling for perception and generation tasks, spanning deep metric learning, Transformers, TCNs, diffusion models, and VQ-VAE. Experience covers the full research cycle from problem formulation through experimental design to publication. Interested in learning-based systems that produce robust, structured representations under real-world constraints.
 
-I am a Research Assistant at AILab, led by Prof. Dr. Lee Joon Whoan 
-
-My passions lie at the intersection of **Computer Vision** and **Music Informatics**, fueled by a love for hip-hop—I’ve even dabbled in writing and producing music. 
-
-Currently, I’m into AI research and development to amplify human creativity and solve some real world problems.
+Research Assistant at AILab, Jeonbuk National University, led by Prof. Dr. Lee Joon Whoan.
 
 ---
 
-## What I Do  
+## Research Interests
 
-- I have worked on projects in Pine Wilt disease (PWD) detection, where we identify classify and segment the trees affected by PWD. Contrastive Learning and Metric Learning are some ideas that I find cool.
-
-- I've also worked on Music Information Retrieval (MIR), My work focused on beat tracking with TCN-transformer hybrid, I have expanded my work to include downbeat tracking in traditional Korean folk music called Pansori. I want to write more about it in my blogs, if I don't procrastinate. 
-
-- I love music, I also make them and find AI applications in Music intriguing. I used to make hip-hop music but I've taken a break recently, maybe I'd resume if I get time or don't procrastinate.I like reading books, specially on philosophy. I like the thoughts from Advaita Vedanta.
+Computer Vision · Deep Metric Learning · Generative Modelling · Representation Learning · Sequence Modelling · Applied Deep Learning
 
 ---
 
-## Let’s Connect  
-Feel free to reach out to discuss ideas, collaborations, or anything !  
+## Work
+
+- **Visual Perception under Weak Supervision** — Pine wilt disease detection from drone orthomaps using YOLOv8 segmentation followed by deep metric learning (ResNet-50, semi-hard triplet loss) for species classification. Achieves 83% mIoU on segmentation and 98.7% classification accuracy on validation.
+
+- **Temporal Event Detection in Audio** — Dual-path TCN–Transformer architecture for beat tracking, with parallel branches capturing local temporal structure and global sequence dependencies. Compact model matching state-of-the-art with fewer parameters.
+
+- **Structured Sequence Modelling** — Downbeat tracking in Jangdan rhythmic structures using TCN + RoFormer with a domain-aware Dynamic Bayesian Network. Currently developing a generative audio system.
+
 ---
+
+## Connect
+
+[nikhiltesla@gmail.com](mailto:nikhiltesla@gmail.com)
